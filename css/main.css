@@ -9,7 +9,7 @@ body {
   /* letter-spacing: .05em; */
   text-align: center;
   margin: 0;
-  color: #ADB1B2;
+  color: #9D9D9D;
 }
 fieldset {
   border: none;
@@ -35,10 +35,14 @@ h2,
 legend {
   color: #394E57;
 }
+.main{
+  border-top: solid .3rem #394E57;
+}
 .form, .newsletter {
   border-top: solid .15rem #394E57;
 }
-form {
+.form {
+  margin-top: .1rem;
   text-align: left;
 }
 fieldset {
@@ -51,14 +55,27 @@ legend {
   font-size: 1.5em;
   font-weight: bold;
 }
-.newsletter-heading {
-  padding-top: 2rem;
+label {
+  margin: .5rem 0 .5rem 0;
 }
-.form {
-  margin-top: .1rem;
+input, 
+select,
+textarea {
+  background-color: #F4F4F4;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
 }
-.main{
-  border-top: solid .3rem #394E57;
+input[placeholder] {
+  text-align: right;
+  font-style: italic;
+  padding-right: 2em;
+}
+.news_section {
+  margin-bottom: .5rem;
+}
+textarea {
+  width: 100%;
 }
 button {
   background-color: #20BCB0;
@@ -69,10 +86,15 @@ button {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
 }
+footer {
+  font-style: italic;
+  margin: 2rem
+}
 /* ================================
   FLEXBOX
 ==================================*/
-.contact-info {
+.contact-info,
+.newsletter {
   display: flex;
   flex-direction: column;
 }
