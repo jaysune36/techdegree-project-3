@@ -1,0 +1,87 @@
+/* ================================
+  GLOBAL LAYOUT
+==================================*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'Times New Roman', Times, serif;
+  /* letter-spacing: .05em; */
+  text-align: center;
+  margin: 0;
+  color: #ADB1B2;
+}
+fieldset {
+  border: none;
+}
+button {
+  width: 100%;
+}
+/* ================================
+  MAIN LAYOUT
+==================================*/
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+h1 {
+  margin-top: 0;
+  background-color: #394E57;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 1.5rem;
+}
+h2,
+legend {
+  color: #394E57;
+}
+.form, .newsletter {
+  border-top: solid .15rem #394E57;
+}
+form {
+  text-align: left;
+}
+fieldset {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+legend {
+  margin-bottom: .5rem;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.newsletter-heading {
+  padding-top: 2rem;
+}
+.form {
+  margin-top: .1rem;
+}
+.main{
+  border-top: solid .3rem #394E57;
+}
+button {
+  background-color: #20BCB0;
+  color: #fff;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+/* ================================
+  FLEXBOX
+==================================*/
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+/* ================================
+  MEDIA QUERIES
+==================================*/
+@media (min-width: 768px) {
+  .container, footer {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
