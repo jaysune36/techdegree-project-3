@@ -6,7 +6,6 @@
 }
 body {
   font-family:'Times New Roman', Times, serif;
-  /* letter-spacing: .05em; */
   text-align: center;
   margin: 0;
   color: #9D9D9D;
@@ -35,14 +34,24 @@ h2,
 legend {
   color: #394E57;
 }
+.heading {
+  padding: 1rem 0;
+  width: 85%; 
+}
+h2 {
+  margin: 0;
+}
+.heading p {
+  margin-top: .5rem;
+}
 .main{
   border-top: solid .3rem #394E57;
 }
-.form, .newsletter {
+.form, .fieldTwo {
   border-top: solid .15rem #394E57;
 }
 .form {
-  margin-top: .1rem;
+  margin: .1rem 0;
   text-align: left;
 }
 fieldset {
@@ -50,7 +59,11 @@ fieldset {
   padding-left: 0;
   padding-right: 0;
 }
+.contact-info {
+  margin-bottom: 2rem;
+}
 legend {
+  padding-top: 1rem;
   margin-bottom: .5rem;
   font-size: 1.5em;
   font-weight: bold;
@@ -65,17 +78,40 @@ textarea {
   border: none;
   border-radius: 5px;
   padding: 1rem;
+  margin-bottom: .5rem;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #fff;
 }
 input[placeholder] {
   text-align: right;
   font-style: italic;
   padding-right: 2em;
 }
+#zip {
+  width: 40%;
+}
 .news_section {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+.news_section:last-child {
+  margin-bottom: 0;
+}
+#html_news, #html_format {
+  margin-top: 1rem;
+}
+input[type="radio"], input[type="checkbox"] {
+  margin: .5rem .5rem 1rem 0;
+}
+#comment {
+  margin-top: 1.5rem;
 }
 textarea {
   width: 100%;
+  height: 100px;
+  resize: none;
 }
 button {
   background-color: #20BCB0;
@@ -102,8 +138,27 @@ footer {
   MEDIA QUERIES
 ==================================*/
 @media (min-width: 768px) {
-  .container, footer {
-    width: 50%;
+  .heading {
+    padding: 1.5rem 0 2rem 0 
+  }
+  .container {
+    width: 70%;
     margin: 0 auto;
+  }
+  .contact-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-info label {
+    flex: 1 20%;
+    align-self: center;
+  }
+  .contact-info input, 
+  .contact-info select {
+    flex: 1 80%;
+    margin: .5rem 0;
+  }
+  #zip {
+    
   }
 }
