@@ -4,8 +4,11 @@
 * {
   box-sizing: border-box;
 }
-body {
+body,
+button {
   font-family: 'Merriweather', serif;
+}
+body {
   text-align: center;
   color: #394E57;
   font-size: 14px;
@@ -14,12 +17,15 @@ fieldset {
   border: none;
 }
 button {
-  font-family: 'Merriweather', serif;
   width: 100%;
 }
 /* ================================
   MAIN LAYOUT
 ==================================*/
+header {
+  background-color: #ababab;
+  margin-bottom: .5rem;
+}
 .container {
   width: 90%;
   margin: 0 auto;
@@ -47,8 +53,8 @@ h2 {
   margin: 0;
 }
 .heading p {
+  color: #fff;
   margin-top: .5rem;
-  color: #ababab;
 }
 footer {
   margin: 2rem;
@@ -59,7 +65,6 @@ footer {
 .main{
   border-top: solid .3rem #394E57;
 }
-
 .form, 
 .fieldTwo {
   border-top: solid .15rem #394E57;
@@ -177,7 +182,7 @@ button:hover {
 ==================================*/
 @media (min-width: 768px) {
   .heading {
-    padding: 3rem 0 2rem 0 
+    padding: 3rem 0 1rem 0 
   }
   .container {
     width: 70%;
