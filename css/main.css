@@ -50,9 +50,16 @@ h2 {
   margin-top: .5rem;
   color: #ababab;
 }
+footer {
+  margin: 2rem;
+}
+
+/*---------- FORM LAYOUT----------- */
+
 .main{
   border-top: solid .3rem #394E57;
 }
+
 .form, 
 .fieldTwo {
   border-top: solid .15rem #394E57;
@@ -150,9 +157,6 @@ button:hover {
   cursor: pointer;
   opacity: .5;
   transition: opacity 1s ease-in;
-}
-footer {
-  margin: 2rem;
 }
 /* ================================
   FLEXBOX
