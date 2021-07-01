@@ -7,8 +7,7 @@
 body {
   font-family: 'Merriweather', serif;
   text-align: center;
-  margin: 0;
-  color: #9D9D9D;
+  color: #394E57;
   font-size: 14px;
 }
 fieldset {
@@ -22,29 +21,34 @@ button {
   MAIN LAYOUT
 ==================================*/
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
+}
+h1,
+button,
+legend {
+  font-size: 1.5em;
+}
+h1,
+button {
+  color: #fff;
 }
 h1 {
   margin-top: 0;
   background-color: #394E57;
-  color: #fff;
-  font-size: 1.5em;
   padding: 1.5rem;
-}
-h2,
-legend {
-  color: #394E57;
 }
 .heading {
   padding: 1rem 0;
   width: 85%; 
 }
+body,
 h2 {
   margin: 0;
 }
 .heading p {
   margin-top: .5rem;
+  color: #ababab;
 }
 .main{
   border-top: solid .3rem #394E57;
@@ -58,7 +62,7 @@ h2 {
   text-align: left;
 }
 fieldset {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -67,18 +71,22 @@ fieldset {
 }
 legend {
   margin-bottom: .5rem;
-  font-size: 1.5em;
   font-weight: bold;
 }
 label {
-  margin: .5rem 0 .5rem 0;
+  margin: .5rem 0;
+}
+input, 
+select,
+textarea,
+button {
+  border-radius: 5px;
+  border: none;
 }
 input, 
 select,
 textarea {
   background-color: #F4F4F4;
-  border: none;
-  border-radius: 5px;
   padding: 1rem;
   margin-bottom: .5rem;
 }
@@ -87,14 +95,28 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: 0;
-  background-color: #fff;
   border: 2px solid #1902AC;
+}
+.contact-info input:focus,
+select:focus,
+textarea:focus {
+  background-color: #fff;
+}
+input[placeholder]::placeholder,
+textarea::placeholder, 
+footer {
+  font-style: italic;
 }
 input[placeholder]::placeholder,
 textarea::placeholder {
   text-align: right;
-  font-style: italic;
   opacity: .5;
+}
+select {
+  color: #ababab;
+}
+select:valid {
+  color: initial;
 }
 #zip {
   width: 50%;
@@ -108,7 +130,8 @@ textarea::placeholder {
 #html_news, #html_format {
   margin-top: 1rem;
 }
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"], 
+input[type="checkbox"] {
   margin: .5rem .5rem 1rem 0;
 }
 #comment {
@@ -121,11 +144,7 @@ textarea {
 }
 button {
   background-color: #20BCB0;
-  color: #fff;
   padding: 1rem 0;
-  border-radius: 5px;
-  border: none;
-  font-size: 1.5em;
 }
 button:hover {
   cursor: pointer;
@@ -133,8 +152,7 @@ button:hover {
   transition: opacity 1s ease-in;
 }
 footer {
-  font-style: italic;
-  margin: 2rem
+  margin: 2rem;
 }
 /* ================================
   FLEXBOX
@@ -149,11 +167,13 @@ footer {
 ==================================*/
 @media (min-width: 768px) {
   .heading {
-    padding: 1.5rem 0 2rem 0 
+    padding: 3rem 0 2rem 0 
   }
   .container {
     width: 70%;
-    margin: 0 auto;
+  }
+  legend {
+    padding-top: 1rem;
   }
   .contact-info {
     flex-direction: row;
