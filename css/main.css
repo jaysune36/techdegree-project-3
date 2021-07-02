@@ -45,7 +45,7 @@ h1 {
   padding: 1.5rem;
 }
 .heading {
-  padding: 1rem 0;
+  padding: 1rem 0 .5rem 0;
   width: 85%; 
 }
 body,
@@ -63,6 +63,7 @@ footer {
 
 .main{
   border-top: solid .3rem #394E57;
+  margin-top: .5rem;
 }
 .fieldOne {
   background-color: #fafafa;
